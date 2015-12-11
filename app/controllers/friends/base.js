@@ -27,6 +27,7 @@ export default Ember.Controller.extend({
       return false;
     },
     cancel() {
+      this.get('model').rollbackAttributes();
       return true;
     }
   }
